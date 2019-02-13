@@ -29,6 +29,11 @@ a {
     color: #2A2A2A;
 }
 
+h2 {
+    color: #2A2A2A;
+    font-weight: 100;
+}
+
 /* 
 ===========================================
 NAV BAR TOP CSS 
@@ -56,9 +61,9 @@ nav div {
 /* BRAND side left */
 .logo {
     /* font size 1.5x to bwrs default*/
-    font-size: 1.5em;
+    font-size: 1.1em;
+    font-weight: 500;
 }
-
 /* SEARCH BAR input side middle */
 
 nav input {
@@ -88,6 +93,12 @@ nav div ul {
     display: flex;
     align-items: center;
     padding: 0;
+}
+
+nav div ul li {
+    /*reoredered for notification */
+    position: relative;
+    cursor: pointer;
 }
 
 /* PROFILE PIC*/
@@ -128,11 +139,31 @@ NAV BAR TOP CSS  * UTILITIES
     background: #CBD2D8;
 }
 
+ul .notification {
+    /* point right red circle on icon or li content */
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, 0);
+    /* sizing and color b-radious*/
+    height: 10px;
+    background: #FF386A;
+
+    padding: 0 3px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: .5em;
+
+    font-weight: 400;
+}
+
 /* 
 ===========================================
-SIDE NAV BAR CSS 
+CONTENT CSS 
 ===========================================
 */
+
+/* devides the content panel into side nav and content-c */
 .content {
 
     position: absolute;
@@ -142,87 +173,283 @@ SIDE NAV BAR CSS
     flex-direction: row;
 }
 
+/* 
+===========================================
+SIDE NAV CSS 
+===========================================
+*/
+
 .nav-side {
+    /* bg color, top border-r and gap*/
     border-top-right-radius: 10px;
     margin-top: 30px;
     background: #FFFFFF;
+    /* maximized side nav lenght h*/
     width: 250px;
+    /* maximized side nav - top nav bar*/
     height: calc(100% - 30px);
-
+    /* column btns with flex*/
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
+/* COLORED GRADIENT ON SIDE NAV*/
+
 .nav-side .us-position {
+    /* positioning and side gaps h*/
     text-align: center;
     position: relative;
     transform: translate(0, -50%);
-    background: linear-gradient(90deg, #17F299, #01E6E3);
-    color: #FFFFFF;
     width: 70%;
+    height: 20px;
+    /* color styling p c bg b-radious*/
     padding: 10px 20px;
     border-radius: 10px;
-    font-weight: bold;
+    background: linear-gradient(90deg, #17F299, #01E6E3);
+    color: #FFFFFF;
+    overflow: hidden;
 }
 
+/* Position Icon*/
+.us-position * {
+    /* bigger font by 1.1x and p-r*/
+    color: #FFFFFF;
+    font-size: 1.1em;
+    padding-right: 5px;
+}
+
+/* OPT OR BTNS CONTAINER ON SIDE NAV*/
 .opts {
+    /* No gaps m p*/
     width: 100%;
-   padding: 0;
-   margin: 0;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .opt {
-    position: relative;
+    /* Change to b-box When height is too small*/
     box-sizing: content-box;
+    /* Relative for red not div*/
+    position: relative;
+    /* Forces-green border hover to be outside*/
     width: 100%;
-    justify-self: flex-start;
-
+    display: flex;
 }
 
 .opt:hover {
+    /* Btn Hover border and pointer*/
     cursor: pointer;
     border-right: solid 4px #17F299;
+    transition: 0s;
 }
 
 .opt * {
-    
-    color: #CBD2D8;
+    /* Default colors and p -trst .3s*/
+    color: #464646;
     transition: .3s;
-    padding: 15px 20px;
-
 }
 
-.opt a.notification  {
-    position: absolute;
-    font-size: .6em;
-    color: #FFFFFF!important;
-    background: #FF386A;
-    padding: 0 5px;
-    border-radius: 10px;
-    right: 10px;
-    top: 50%;
-    transform: translate(0, -50%)
-
+.opt .icon {
+    height: 40px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.opt:hover a, .opt:hover i {
+
+.opt a {
+    justify-self: left;
+    align-self: center;
+    padding: 0 10px;
+}
+
+.opt:hover .icon {
+    /* Default colors when hover*/
+    color: #2A2A2A;
+    transform: scale(1.3);
+}
+
+.opt:hover a, .opt:hover i{
     color: #2A2A2A;
 }
 
-.selected i, .selected a {
-    color: #2A2A2A!important;
+.selected i,
+.selected a {
+    /* Default colors when selected*/
+    color: #2A2A2A;
 }
 
-.nav-content {
-    width: calc(100% - 250px);
-    height: 100%;
-    overflow-y: scroll;
-}
+/* 
+===========================================
+SIDE NAV BAR  CSS  * UTILITIES
+===========================================
+*/
 
 .hline {
     /* v line */
-    border-bottom: 1px solid #CBD2D8;
+    border-bottom: .9px solid #e6e6e6;
     width: 100%;
-    background: #CBD2D8;
+}
+
+.opt a.notification {
+    /* positioning on element absoluto to opt */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    /* styling for notification on side nav */
+    font-size: .6em;
+    color: #FFFFFF;
+    background: #FF386A;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+/* 
+===========================================
+SIDE NAV BAR  CSS  * MINIMIZED
+===========================================
+*/
+.trans * {
+    transition: .3s;
+}
+
+
+.minimized .nav-side {
+    /* maximized side nav lenght h*/
+    width: 60px;
+}
+
+.minimized .side-content {
+    width: calc(100% - 50px);
+}
+
+.minimized .sn-text {
+    display: none;
+}
+
+.minimized a.notification  {
+    right: -10px;
+}
+
+.minimized .nav-side .us-position {
+    /* color styling p c bg b-radious*/
+    padding: 10px 2px;
+
+}
+
+.minimized .us-position * {
+    /* bigger font by 1.1x and p-r*/
+    padding-right: 0px;
+}
+
+/* 
+===========================================
+SIDE CONTENT  CSS
+===========================================
+*/
+
+.side-content {
+    position: relative;
+    box-sizing: content-box;
+    width: calc(100% - 250px);
+    height: auto;
+    overflow-y: scroll;
+    padding: 0 30px;
+}
+
+/* 
+===========================================
+NEWS-CARD ITEM CSS
+===========================================
+*/
+
+.news-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.news-card .news-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.news-user .user-pic{
+
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    border: solid 3px #EBEFF5;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.verified{
+    position: absolute;
+    align-self: center;
+    height: 15px;
+    width: 15px;
+    top: 0;
+    right: 0;
+    transform: translate(+5px);
+    background: url(/assets/verified.svg);
+}
+
+.news-user .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.side-content .news-card .news-img {
+    height: 60vh;
+    background-size: 100%;
+    background-position: top;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content .news-text {
+    word-wrap: break-word;
+    text-align: justify;
+    column-count: 2;
+    padding-bottom: 20px;
+}
+
+
+
+.news-card:nth-of-type(1) .news-user .user-pic{
+    background: #FF386A;
+}
+.news-card:nth-of-type(1) .news-user .user-pic a{
+    color: #FFFFFF;
+}
+
+.side-content .news-card:nth-of-type(1) .news-img {
+    background-image: url(/assets/fake-bg2.jpg);
+}
+
+.news-card:nth-of-type(2) .news-user .user-pic{
+    background: #AA59FF;
+}
+.news-card:nth-of-type(2) .news-user .user-pic a{
+    color: #FFFFFF;
+}
+
+.side-content .news-card:nth-of-type(2) .news-img {
+    background-image: url(/assets/fake-bg.jpg);
 }
