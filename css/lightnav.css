@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.fas,
+.fab,
+.fa {
+    color: #3f3f3f;
+}
+
+body {
+    /* default override  */
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* page bg override  */
+    background: #EBEFF5;
+}
+
+nav * {
+    text-align: center;
+}
+
+nav div {
+    /* colors */
+    background: #FFFFFF;
+    /* aligning */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*v sizing */
+    height: 60px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav input {
+    border: none;
+    background: #EBEFF5;
+    height: 50%;
+    width: 400px;
+    border-radius: 10px;
+}
+
+div.input i {
+    color: #ADB3BA;
+    position: relative;
+    left: -7%;
+}
+
+nav div ul a {
+    color: #2A2A2A;
+}
+
+nav div ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.profile-nav {
+
+    background: linear-gradient(0deg, #40DCB1, #40DC80);
+    border: solid 2px #EBEFF5;
+    border-radius: 50%;
+    /* aligning */
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+
+
+}
+
+.margin-sides {
+    margin: 0 20px;
+}
+
+.rline {
+    display: inline-flex;
+    height: 30px;
+    width: 1px;
+    background: #CBD2D8;
+}
