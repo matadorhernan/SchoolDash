@@ -1,91 +1,228 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/* default override on lists and link underlines  */
 * {
 
     list-style-type: none;
     text-decoration: none;
 }
 
+/* all awesome icons on grey by default  */
 .fas,
 .fab,
 .fa {
     color: #3f3f3f;
 }
 
+/* body css */
+
 body {
-    /* default override  */
+    /* default override bg p and m fonts*/
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    /* page bg override  */
     background: #EBEFF5;
 }
 
+a {
+    /* links colors */
+    color: #2A2A2A;
+}
+
+/* 
+===========================================
+NAV BAR TOP CSS 
+===========================================
+*/
+
 nav * {
+    /* all text aligned horizontally widthin element*/
     text-align: center;
 }
 
+/* nav > div controls container for navbar */
+
 nav div {
-    /* colors */
+    /* nav bar bg color */
     background: #FFFFFF;
-    /* aligning */
+    /* aligning flex sb(1 000 1 000 1) -c- */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*v sizing */
+    /*v sizing items will stay v centered*/
     height: 60px;
 }
 
+/* BRAND side left */
 .logo {
+    /* font size 1.5x to bwrs default*/
     font-size: 1.5em;
-    font-weight: bold;
 }
 
+/* SEARCH BAR input side middle */
+
 nav input {
+    /* input tag override */
     border: none;
     background: #EBEFF5;
+
+    /* input tag sizing and border-r */
     height: 50%;
     width: 400px;
     border-radius: 10px;
 }
 
+/* search bar icon search awesome font */
 div.input i {
+    /* search bar color */
     color: #ADB3BA;
+    /* search bar position inside search bar */
     position: relative;
     left: -7%;
 }
 
-nav div ul a {
-    color: #2A2A2A;
-}
+/* USER LINKS side right */
 
 nav div ul {
+    /*reoredered ul items to be v aligned and p-0 */
     display: flex;
     align-items: center;
     padding: 0;
 }
 
-.profile-nav {
+/* PROFILE PIC*/
 
+.profile-nav {
+    /* PROFILE PIC CHANGE THIS */
     background: linear-gradient(0deg, #40DCB1, #40DC80);
+    color: #FFFFFF;
+    /* border-r and clipping */
     border: solid 2px #EBEFF5;
     border-radius: 50%;
-    /* aligning */
+    /* aligning element superpossed*/
     display: inline-flex;
+    /* aligning text and iside content */
+    align-items: center;
+    justify-content: center;
+    /* sizing and m */
     width: 30px;
     height: 30px;
     margin-left: 20px;
-
-
 }
 
+/* 
+===========================================
+NAV BAR TOP CSS  * UTILITIES
+===========================================
+*/
+
 .margin-sides {
+    /* DEF m */
     margin: 0 20px;
 }
 
-.rline {
-    display: inline-flex;
+.vline {
+    /* v line */
     height: 30px;
     width: 1px;
+    background: #CBD2D8;
+}
+
+/* 
+===========================================
+SIDE NAV BAR CSS 
+===========================================
+*/
+.content {
+
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-side {
+    border-top-right-radius: 10px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    width: 250px;
+    height: calc(100% - 30px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nav-side .us-position {
+    text-align: center;
+    position: relative;
+    transform: translate(0, -50%);
+    background: linear-gradient(90deg, #17F299, #01E6E3);
+    color: #FFFFFF;
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.opts {
+    width: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+.opt {
+    position: relative;
+    box-sizing: content-box;
+    width: 100%;
+    justify-self: flex-start;
+
+}
+
+.opt:hover {
+    cursor: pointer;
+    border-right: solid 4px #17F299;
+}
+
+.opt * {
+    
+    color: #CBD2D8;
+    transition: .3s;
+    padding: 15px 20px;
+
+}
+
+.opt a.notification  {
+    position: absolute;
+    font-size: .6em;
+    color: #FFFFFF!important;
+    background: #FF386A;
+    padding: 0 5px;
+    border-radius: 10px;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%)
+
+}
+.opt:hover a, .opt:hover i {
+    color: #2A2A2A;
+}
+
+.selected i, .selected a {
+    color: #2A2A2A!important;
+}
+
+.nav-content {
+    width: calc(100% - 250px);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.hline {
+    /* v line */
+    border-bottom: 1px solid #CBD2D8;
+    width: 100%;
     background: #CBD2D8;
 }
