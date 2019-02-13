@@ -8,113 +8,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/lightnav.css">
+    <link rel="stylesheet" href="css/navs.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <nav>
-        <div>
-            <ul>
-                <li class="side-nav-controller"><a class="margin-sides"><i class="fas fa-bars"></i></a></li>
-                <li><a class="margin-sides logo">Universidad</a></li>
-            </ul>
-            <div class="input">
-                <input type="text" placeholder="Busqueda">
-                <i class="fas fa-search"></i>
+    <div class="login">
+        <nav>
+            <div>
+                <ul>
+                    <li><a class="margin-sides logo">Universidad</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="input user margin-sides">
+                            <input type="text" placeholder="Usuario">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input user">
+                            <input type="password" placeholder="Contraseña">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </li>
+                    <li class="margin-sides"><i class="fas fa-arrow-alt-circle-right"></i>
+                    </li>
+                    <li class="vline margin-sides "></li>
+                    <li class="margin-sides side-school-controller"><a class="nine-dots"></a></li>
+                </ul>
             </div>
+        </nav>
+        <div class="login-pane">
+            <H1>Universidad</H1>
+            <h5>Aguascalientes MX</h5>
+           
 
-            <ul>
-                <li class="margin-sides"><i class="fas fa-envelope"></i>
-                    <div class="notification">+99</div>
-                </li>
-                <div class="vline"></div>
-                <li class="margin-sides"><i class="fas fa-bell"></i>
-                  
-                </li>
-                <div class="vline"></div>
-                <li>
-                    <!-- <div class="verified"></div> -->
-                    <a class="profile-nav" href="#">M</a>
-                </li>
-                <li class="margin-sides">
-                    <a href="#">Miguel Romero</a>
-                </li>
-                <li class="margin-sides">
-                    <i class="fas fa-cog"></i>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="content trans">
-        <div class="nav-side">
-
-            <a class="us-position"> <i class="fas fa-university"></i><span class="sn-text"> Control Escolar</span></a>
-            <div class="opts">
-                <div class="opt selected">
-                    <div class="icon"> <i class="fas fa-home"></i></div>
-                    <a class="sn-text">Inicio</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-users"></i></div>
-                    <a class="sn-text">Grupos</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-user"></i></div>
-                    <a class="sn-text">Alumnos</a>
-                    <a class="notification">+30</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-chalkboard-teacher"></i></div>
-                    <a class="sn-text">Maestros</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-plane"></i></div>
-                    <a class="sn-text">Intercambios</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-file-alt"></i></div>
-                    <a class="sn-text">Documentos</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-chart-bar"></i></div>
-                    <a class="sn-text"> Graficas</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-burn"></i></div>
-                    <a class="sn-text">Rendimiento</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-book"></i></div>
-                    <a class="sn-text">Biblioteca</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-calendar-alt"></i></div>
-                    <a class="sn-text">Calendario</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-car-alt"></i></div>
-                    <a class="sn-text">Estacionamiento</a>
-                </div>
-                <div class="hline"></div>
-                <div class="opt">
-                    <div class="icon"> <i class="fas fa-video"></i></div>
-                    <a class="sn-text">Camaras</a>
-                </div>
-            </div>
-
-        </div>
-
-        <section class="side-content">
             <div class="news-card">
                 <div class="news-user">
                     <div class="user-pic">
@@ -127,64 +57,214 @@
                     </div>
                 </div>
                 <div class="hline"></div>
-                <div class="news-img"></div>
-                <div class="hline"></div>
-                <div class="news-content">
-                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                    <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas nihil
-                        nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem iusto quam
-                        repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum similique ex
-                        doloribus voluptates libero hic quaerat sequi! Fuga veniam, similique quos architecto maxime
-                        quibusdam debitis praesentium asperiores cupiditate fugiat autem eveniet atque cumque.
-                        Consequuntur error veritatis qui laboriosam excepturi obcaecati quaerat odio sequi,
-                        perspiciatis illo beatae, aperiam in a quam eaque impedit totam voluptate repellat. Deserunt
-                        natus accusamus obcaecati, cupiditate commodi delectus iure repudiandae ab exercitationem
-                        autem, perspiciatis magnam, doloribus libero harum est. Modi id nisi exercitationem nostrum
-                        aliquid quam repellendus atque totam molestias eveniet facilis quibusdam repudiandae, sed vitae
-                        explicabo est maiores velit dolor! Repellendus nisi corporis mollitia obcaecati doloremque at,
-                        quam quisquam veniam accusamus vitae similique animi nemo rem eaque illo aut officiis, cumque
-                        porro error tenetur doloribus nostrum autem est eos? Eius odit consectetur fugiat laborum aut
-                        quas illum distinctio iure debitis asperiores tenetur et reiciendis sapiente nihil vero tempore
-                        ex quia modi magni eveniet quaerat, itaque voluptatum. Magni rem, ducimus vero magnam
-                        cupiditate dolore quasi doloribus repellat excepturi voluptates placeat explicabo labore neque
-                        quibusdam aliquam distinctio autem non?</div>
+                <div class="news-img">
+                        <div class="news-content">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas
+                                    nihil
+                                    nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem iusto
+                                    quam
+                                    repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum similique
+                                    ex...</div>
+                            </div>
                 </div>
             </div>
-            <div class="news-card">
-                <div class="news-user">
-                    <div class="user-pic">
-                        <a href="#">SM</a>
+        </div>
+    </div>
+    <div class="app">
+        <nav>
+            <div>
+                <ul>
+                    <li class="side-nav-controller"><a class="margin-sides"><i class="fas fa-bars"></i></a></li>
+                    <li><a class="margin-sides logo">Universidad</a></li>
+                </ul>
+                <div class="input">
+                    <input type="text" placeholder="Busqueda">
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul>
+                    <li class="margin-sides"><i class="fas fa-envelope"></i>
+                        <div class="notification">+99</div>
+                    </li>
+                    <div class="vline"></div>
+                    <li class="margin-sides"><i class="fas fa-bell"></i>
+                    </li>
+                    <div class="vline"></div>
+                    <li>
+                        <!-- <div class="verified"></div> -->
+                        <a class="profile-nav" href="#">M</a>
+                    </li>
+                    <li class="margin-sides">
+                        <a href="#">Miguel Romero</a>
+                    </li>
+                    <li class="margin-sides">
+                        <i class="fas fa-cog"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="content trans">
+            <div class="nav-side">
+                <a class="us-position"> <i class="fas fa-university"></i><span class="sn-text"> Control Escolar</span></a>
+                <div class="opts">
+                    <div class="opt selected">
+                        <div class="icon"> <i class="fas fa-home"></i></div>
+                        <a class="sn-text">Inicio</a>
                     </div>
-                    <div class="user-info">
-                        <a href="#">Susana Mata</a>
-                        <a href="#">@matas</a>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-users"></i></div>
+                        <a class="sn-text">Grupos</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-user"></i></div>
+                        <a class="sn-text">Alumnos</a>
+                        <a class="notification">+30</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-chalkboard-teacher"></i></div>
+                        <a class="sn-text">Maestros</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-plane"></i></div>
+                        <a class="sn-text">Intercambios</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-file-alt"></i></div>
+                        <a class="sn-text">Documentos</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-chart-bar"></i></div>
+                        <a class="sn-text"> Graficas</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-burn"></i></div>
+                        <a class="sn-text">Rendimiento</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-book"></i></div>
+                        <a class="sn-text">Biblioteca</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-calendar-alt"></i></div>
+                        <a class="sn-text">Calendario</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-car-alt"></i></div>
+                        <a class="sn-text">Estacionamiento</a>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="opt">
+                        <div class="icon"> <i class="fas fa-video"></i></div>
+                        <a class="sn-text">Camaras</a>
                     </div>
                 </div>
-                <div class="hline"></div>
-                <div class="news-img"></div>
-                <div class="hline"></div>
-                <div class="news-content">
-                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                    <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas nihil
-                        nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem iusto quam
-                        repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum similique ex
-                        doloribus voluptates libero hic quaerat sequi! Fuga veniam, similique quos architecto maxime
-                        quibusdam debitis praesentium asperiores cupiditate fugiat autem eveniet atque cumque.
-                        Consequuntur error veritatis qui laboriosam excepturi obcaecati quaerat odio sequi,
-                        perspiciatis illo beatae, aperiam in a quam eaque impedit totam voluptate repellat. Deserunt
-                        natus accusamus obcaecati, cupiditate commodi delectus iure repudiandae ab exercitationem
-                        autem, perspiciatis magnam, doloribus libero harum est. Modi id nisi exercitationem nostrum
-                        aliquid quam repellendus atque totam molestias eveniet facilis quibusdam repudiandae, sed vitae
-                        explicabo est maiores velit dolor! Repellendus nisi corporis mollitia obcaecati doloremque at,
-                        quam quisquam veniam accusamus vitae similique animi nemo rem eaque illo aut officiis, cumque
-                        porro error tenetur doloribus nostrum autem est eos? Eius odit consectetur fugiat laborum aut
-                        quas illum distinctio iure debitis asperiores tenetur et reiciendis sapiente nihil vero tempore
-                        ex quia modi magni eveniet quaerat, itaque voluptatum. Magni rem, ducimus vero magnam
-                        cupiditate dolore quasi doloribus repellat excepturi voluptates placeat explicabo labore neque
-                        quibusdam aliquam distinctio autem non?</div>
+            </div>
+            <section class="side-content">
+                <div class="news-card anouncements">
                 </div>
+                <div class="news-card">
+                    <div class="news-user">
+                        <div class="user-pic">
+                            <div class="verified"></div>
+                            <a href="#">ZA</a>
+                        </div>
+                        <div class="user-info">
+                            <a href="#">Jose Zamora</a>
+                            <a href="#">@zamora</a>
+                        </div>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="news-img"></div>
+                    <div class="hline"></div>
+                    <div class="news-content">
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas
+                            nihil
+                            nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem iusto
+                            quam
+                            repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum similique
+                            ex
+                            doloribus voluptates libero hic quaerat sequi! Fuga veniam, similique quos architecto
+                            maxime
+                            quibusdam debitis praesentium asperiores cupiditate fugiat autem eveniet atque cumque.
+                            Consequuntur error veritatis qui laboriosam excepturi obcaecati quaerat odio sequi,
+                            perspiciatis illo beatae, aperiam in a quam eaque impedit totam voluptate repellat.
+                            Deserunt
+                            natus accusamus obcaecati, cupiditate commodi delectus iure repudiandae ab exercitationem
+                            autem, perspiciatis magnam, doloribus libero harum est. Modi id nisi exercitationem nostrum
+                            aliquid quam repellendus atque totam molestias eveniet facilis quibusdam repudiandae, sed
+                            vitae
+                            explicabo est maiores velit dolor! Repellendus nisi corporis mollitia obcaecati doloremque
+                            at,
+                            quam quisquam veniam accusamus vitae similique animi nemo rem eaque illo aut officiis,
+                            cumque
+                            porro error tenetur doloribus nostrum autem est eos? Eius odit consectetur fugiat laborum
+                            aut
+                            quas illum distinctio iure debitis asperiores tenetur et reiciendis sapiente nihil vero
+                            tempore
+                            ex quia modi magni eveniet quaerat, itaque voluptatum. Magni rem, ducimus vero magnam
+                            cupiditate dolore quasi doloribus repellat excepturi voluptates placeat explicabo labore
+                            neque
+                            quibusdam aliquam distinctio autem non?</div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-user">
+                        <div class="user-pic">
+                            <a href="#">SM</a>
+                        </div>
+                        <div class="user-info">
+                            <a href="#">Susana Mata</a>
+                            <a href="#">@matas</a>
+                        </div>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="news-img"></div>
+                    <div class="hline"></div>
+                    <div class="news-content">
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas
+                            nihil
+                            nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem iusto
+                            quam
+                            repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum similique
+                            ex
+                            doloribus voluptates libero hic quaerat sequi! Fuga veniam, similique quos architecto
+                            maxime
+                            quibusdam debitis praesentium asperiores cupiditate fugiat autem eveniet atque cumque.
+                            Consequuntur error veritatis qui laboriosam excepturi obcaecati quaerat odio sequi,
+                            perspiciatis illo beatae, aperiam in a quam eaque impedit totam voluptate repellat.
+                            Deserunt
+                            natus accusamus obcaecati, cupiditate commodi delectus iure repudiandae ab exercitationem
+                            autem, perspiciatis magnam, doloribus libero harum est. Modi id nisi exercitationem nostrum
+                            aliquid quam repellendus atque totam molestias eveniet facilis quibusdam repudiandae, sed
+                            vitae
+                            explicabo est maiores velit dolor! Repellendus nisi corporis mollitia obcaecati doloremque
+                            at,
+                            quam quisquam veniam accusamus vitae similique animi nemo rem eaque illo aut officiis,
+                            cumque
+                            porro error tenetur doloribus nostrum autem est eos? Eius odit consectetur fugiat laborum
+                            aut
+                            quas illum distinctio iure debitis asperiores tenetur et reiciendis sapiente nihil vero
+                            tempore
+                            ex quia modi magni eveniet quaerat, itaque voluptatum. Magni rem, ducimus vero magnam
+                            cupiditate dolore quasi doloribus repellat excepturi voluptates placeat explicabo labore
+                            neque
+                            quibusdam aliquam distinctio autem non?</div>
+                    </div>
+            </section>
         </section>
-    </section>
+    </div>
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>

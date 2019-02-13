@@ -1,0 +1,143 @@
+/* 
+===========================================
+NEWS-CARD ITEM CSS
+===========================================
+*/
+
+.news-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+/* 
+===========================================
+NEWS-CARD NEWS FORM ITEM CSS
+===========================================
+*/
+
+.news-card .news-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.news-user .user-pic {
+
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    border: solid 3px #EBEFF5;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.news-user .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.news-user .user-info a:nth-of-type(2) {
+    color: #acacac;
+    font-size: .8em;
+}
+
+.side-content .news-card .news-img {
+    height: 60vh;
+    background-size: cover;
+    background-position: top;
+    
+}
+
+.news-content {
+    padding: 30px;
+}
+
+.news-content .news-text {
+    word-wrap: break-word;
+    text-align: justify;
+    column-count: 2;
+    padding-bottom: 20px;
+}
+
+
+.login .news-content {
+   transform: translate(0);
+   background: #00000063;
+   transition: .3s;
+}
+
+.login .news-card .news-img {
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 10px;
+    bottom: 0;
+    top: 0px;
+   
+}
+
+.login .news-card .news-img:hover .news-content{
+    transform: translate(0 ,100%);
+}
+
+.login .news-card .news-user {
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    background: #FFFFFFcc;
+    z-index: 1;
+}
+
+.login .news-card .news-img * {
+    color: #FFFFFF;
+    word-wrap: break-word;
+    
+}
+
+.login .news-card {
+    position: relative;
+    height:  100%;
+    margin: 0;
+}
+
+
+/* 
+CUSTOM PROFILE ITEM CSS
+*/
+
+.news-card:nth-of-type(1) .news-user .user-pic a {
+    color: #2A2A2A;
+}
+
+.side-content .news-card:nth-of-type(2) .news-img {
+    background-image: url(/assets/fake-bg2.jpg);
+}
+
+.news-card:nth-of-type(2) .news-user .user-pic a {
+    color: #2A2A2A;
+}
+
+.side-content .news-card:nth-of-type(3) .news-img {
+    background-image: url(/assets/fake-bg.jpg);
+}
+
+.login  .news-card .news-img {
+    background-image: url(/assets/login-bg2.jpeg);
+}
+
+.login  .news-card .news-user .user-pic {
+    background: #fff;
+}

@@ -1,0 +1,78 @@
+
+
+.login {
+    position: absolute;
+    background: url(/assets/login-bg.jpg);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.login .side-school-controller {
+    position: relative;
+    display: flex;
+    height: 15px;
+    width: 15px;
+}
+
+.login .input.user input{
+    width: 150px;
+}
+
+.login .input.user i{
+    transform: translate(-10px);
+}
+.login .nine-dots {
+
+    background: url(/assets/9dots.svg);
+    position: absolute;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 20px;
+
+}
+
+.login .login-pane {
+
+    position: relative;
+    width: calc(70% + 50px);
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
+    border-radius: 10px;
+    background: #ffffffDD;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+    margin: 30px;
+
+}
+
+.login .login-pane h1 {
+    padding: 0;
+    margin: 0;
+    color: #464646;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.login .login-pane h5 {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 30px;
+}
