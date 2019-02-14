@@ -15,9 +15,17 @@
 }
 
 /* body css */
-
 body {
+    margin: 0;
+    padding: 0;
+}
+
+.body-bug {
     /* default override bg p and m fonts*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -67,6 +75,18 @@ nav div {
     height: 60px;
 }
 
+.logo-img {
+    background: url(/assets/logos/delta.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    left: 0;
+    top: 0;
+    position: relative;
+    margin-right: 10px;
+}
 /* BRAND side left */
 .logo {
     /* font size 1.5x to bwrs default*/
@@ -85,6 +105,7 @@ nav input {
     height: 50%;
     width: 400px;
     border-radius: 10px;
+    padding-right: 10px;
 }
 
 /* search bar icon search awesome font */
@@ -93,7 +114,7 @@ div.input i {
     color: #ADB3BA;
     /* search bar position inside search bar */
     position: relative;
-    left: -7%;
+    left: +9%;
 }
 
 /* USER LINKS side right */

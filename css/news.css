@@ -76,7 +76,13 @@ NEWS-CARD NEWS FORM ITEM CSS
    transition: .3s;
 }
 
+.login .stack {
+    position: relative;
+    height: 100%;
+}
+
 .login .news-card .news-img {
+
     position: absolute;
     width: 100%;
     background-size: cover;
@@ -104,13 +110,14 @@ NEWS-CARD NEWS FORM ITEM CSS
 .login .news-card .news-img * {
     color: #FFFFFF;
     word-wrap: break-word;
-    
 }
 
 .login .news-card {
-    position: relative;
+    position: absolute;
     height:  100%;
+    width: 100%;
     margin: 0;
+    top: 0;
 }
 
 
