@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- FONT AWESOME FREE CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+    <!-- NAV STYLES FOR SIDE AND TOP PANELS -->
     <link rel="stylesheet" href="css/navs.css">
+    <!-- SECTIONS CSS -->
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <!-- THEMES -->
 </head>
 
 <body>
     <div class="body-bug">
+
+        <!-- LOGIN STARTS HERE -->
         <div class="login not-logged">
+            <!-- NAV BAR FOR LOGIN PAGE -->
             <nav>
                 <div>
                     <ul class="margin-sides">
@@ -44,9 +52,26 @@
                     </ul>
                 </div>
             </nav>
-            <div class="school-opts">
-                
+            <!-- SCHOOL OPTIONS LIGHT BOX -->
+            <div class="school-opts dis-none ">
+                <ul>
+                    <li>
+                        <div opt-brand>
+                            <div class="logo-opt"></div>
+                            <a href="">Delta Mexico</a>
+                        </div>
+                    </li>
+                    <div class="hline"></div>
+                    <!-- <li>
+                        <div opt-brand>
+                                <div class="logo-opt"></div>
+                                <a href="">Delta Mexico</a>
+                        </div>
+                        <div class="hline"></div>
+                    </li> -->
+                </ul>
             </div>
+            <!-- LOGIN PANE NEWS -->
             <div class="login-pane">
                 <H1>Delta Mexico</H1>
                 <div class="hline"></div>
@@ -108,17 +133,18 @@
                     </div>
                 </div>
                 <div class="news-rotator">
-                       <a href="" class="circle"></a>
-                       <a href="" class="circle"></a>
-                       <a href="" class="circle"></a>
+                    <a href="" class="circle"></a>
+                    <a href="" class="circle"></a>
+                    <a href="" class="circle"></a>
                 </div>
             </div>
         </div>
+        <!-- LOGIN ENDS HERE -->
         <div class="app no-app">
             <nav>
                 <div>
                     <ul>
-                        <li class="side-nav-controller"><a class="margin-sides"><i class="fas fa-bars"></i></a></li>
+                        <li class="side-nav-controller"><a class="margin-sides"><i class="fas fa-bars rotate"></i></a></li>
                         <li class="margin-sides logo-img"><a href=""></a></li>
                         <li><a class="logo">Delta Mexico</a></li>
                     </ul>
@@ -139,7 +165,7 @@
                             <a class="profile-nav" href="#">M</a>
                         </li>
                         <li class="margin-sides">
-                            <a href="#">Miguel Romero</a>
+                            <a href="#">Administrador</a>
                         </li>
                         <li class="margin-sides">
                             <i class="fas fa-cog"></i>
@@ -147,9 +173,9 @@
                     </ul>
                 </div>
             </nav>
-            <section class="content trans">
+            <section class="content">
                 <div class="nav-side">
-                    <a class="us-position"> <i class="fas fa-university"></i><span class="sn-text"> Control Escolar</span></a>
+                    <a class="us-position"> <i class="fas fa-plane"></i><span class="sn-text"> Control Escolar</span></a>
                     <div class="opts">
                         <div class="opt selected">
                             <div class="icon"> <i class="fas fa-home"></i></div>
@@ -173,48 +199,58 @@
                         </div>
                         <div class="hline"></div>
                         <div class="opt">
-                            <div class="icon"> <i class="fas fa-plane"></i></div>
-                            <a class="sn-text">Intercambios</a>
+                            <div class="icon"><i class="fas fa-edit"></i></div>
+                            <a class="sn-text">Notas</a>
                         </div>
                         <div class="hline"></div>
                         <div class="opt">
                             <div class="icon"> <i class="fas fa-file-alt"></i></div>
-                            <a class="sn-text">Documentos</a>
+                            <a class="sn-text">Calificaciones</a>
                         </div>
                         <div class="hline"></div>
                         <div class="opt">
                             <div class="icon"> <i class="fas fa-chart-bar"></i></div>
                             <a class="sn-text"> Graficas</a>
                         </div>
-                        <div class="hline"></div>
-                        <div class="opt">
-                            <div class="icon"> <i class="fas fa-burn"></i></div>
-                            <a class="sn-text">Rendimiento</a>
-                        </div>
-                        <div class="hline"></div>
-                        <div class="opt">
-                            <div class="icon"> <i class="fas fa-book"></i></div>
-                            <a class="sn-text">Biblioteca</a>
-                        </div>
-                        <div class="hline"></div>
-                        <div class="opt">
-                            <div class="icon"> <i class="fas fa-calendar-alt"></i></div>
-                            <a class="sn-text">Calendario</a>
-                        </div>
-                        <div class="hline"></div>
-                        <div class="opt">
-                            <div class="icon"> <i class="fas fa-car-alt"></i></div>
-                            <a class="sn-text">Estacionamiento</a>
-                        </div>
-                        <div class="hline"></div>
-                        <div class="opt">
-                            <div class="icon"> <i class="fas fa-video"></i></div>
-                            <a class="sn-text">Camaras</a>
-                        </div>
                     </div>
                 </div>
                 <section class="side-content">
-                    <div class="news-card anouncements">
+                    <div class="stats-pane">
+                        <div class="sts">
+                            <div class="icon-sts"><i class="fas fa-user"></i></div>
+                            <div class="new-vline"></div>
+                            <div class="leveler">
+                                <h2 class="number">80</h2>
+                                <a class="label">Estudiantes</a>
+                            </div>
+                        </div>
+                        <div class="m30"></div>
+                        <div class="sts">
+                            <div class="icon-sts"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <div class="new-vline"></div>
+                            <div class="leveler">
+                                <h2 class="number">10</h2>
+                                <a class="label">Maestros</a>
+                            </div>
+                        </div>
+                        <div class="m30"></div>
+                        <div class="sts">
+                            <div class="icon-sts"><i class="fas fa-plane"></i></div>
+                            <div class="new-vline"></div>
+                            <div class="leveler">
+                                <h2 class="number">765</h2>
+                                <a class="label">Horas de Vuelo</a>
+                            </div>
+                        </div>
+                        <div class="m30"></div>
+                        <div class="sts">
+                            <div class="icon-sts"><i class="fas fa-user-graduate"></i></div>
+                            <div class="new-vline"></div>
+                            <div class="leveler">
+                                <h2 class="number">210</h2>
+                                <a class="label">Graduados</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="news-card">
                         <div class="news-user">
