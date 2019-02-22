@@ -1,6 +1,7 @@
 
 
 .login {
+    
     position: absolute;
     background: #EBEFF5;
     top: 0;
@@ -15,15 +16,14 @@
 }
 
 .not-logged{
-    z-index: 1;
+    z-index: 3;
     transform: translate(0);
     transition: .5s;
 }
 
 .logged {
-    z-index: 1;
+    z-index: 3;
     transform: translate(0, -100%);
-    
     transition: .5s;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .login .input.user i{
-    transform: translate(-10px);
+    transform: translate(+10px);
     color: #464646;
 }
 
@@ -118,64 +118,4 @@
     width: 10px;
     background:#d1d1d1 ;
     border-radius: 50%;
-}
-
-.school-opts {
-    position: absolute;
-    top: 70px;
-    right: 10px;
-    background: #FFFFFF;
-    width: 300px;
-    z-index: 4;
-    border-radius: 10px;
-
-}
-
-.school-opts ul {
-    
-    padding:0;
-    margin: 0;
-}
-
-.school-opts ul li {
-    display: flex;
-    flex-direction: column;
-}
-
-.school-opts ul li div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 3px;
-}
-
-.school-opts::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: 25px;
-    background: #FFFFFF;
-    height: 30px;
-    width: 30px;
-    z-index: 3;
-    border-radius: 3px;
-    transform: rotate(45deg);
-
-}
-
-.dis-none {
-    display: none;
-}
-
-.school-opts .logo-opt {
-    background: url(/assets/logos/delta.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
-    left: 0;
-    top: 0;
-    position: relative;
-    margin-right: 10px;
 }

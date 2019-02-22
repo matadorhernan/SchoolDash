@@ -12,9 +12,11 @@
     <!-- NAV STYLES FOR SIDE AND TOP PANELS -->
     <link rel="stylesheet" href="css/navs.css">
     <!-- SECTIONS CSS -->
+    <link rel="stylesheet" href="css/navlighbox.css">
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/groups.css">
     <!-- THEMES -->
 </head>
 
@@ -148,7 +150,7 @@
                         <li class="margin-sides logo-img"><a href=""></a></li>
                         <li><a class="logo">Delta Mexico</a></li>
                     </ul>
-                    <div class="input">
+                    <div class="input search">
                         <input type="text" placeholder="Busqueda">
                         <i class="fas fa-search"></i>
                     </div>
@@ -167,22 +169,38 @@
                         <li class="margin-sides">
                             <a href="#">Administrador</a>
                         </li>
-                        <li class="margin-sides">
-                            <i class="fas fa-cog"></i>
+                        <li class="margin-sides conf-controller">
+                            <i class="fas fa-cog rotate"></i>
                         </li>
                     </ul>
                 </div>
             </nav>
+            <div class="conf-opts dis-none">
+                <ul>
+                    <li>
+                        <div class="opt-conf">
+                            <div class="icon"><i class="fas fa-cloud-moon"></i></div>
+                            <a>Apagar Luces</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="opt-conf">
+                            <div class="icon"><i class="fas fa-lock"></i></div>
+                            <a>Cerrar Secion</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <section class="content">
                 <div class="nav-side">
                     <a class="us-position"> <i class="fas fa-plane"></i><span class="sn-text"> Control Escolar</span></a>
                     <div class="opts">
-                        <div class="opt selected">
+                        <div class="opt selected" id="home">
                             <div class="icon"> <i class="fas fa-home"></i></div>
                             <a class="sn-text">Inicio</a>
                         </div>
                         <div class="hline"></div>
-                        <div class="opt">
+                        <div class="opt" id="group">
                             <div class="icon"> <i class="fas fa-users"></i></div>
                             <a class="sn-text">Grupos</a>
                         </div>
@@ -215,147 +233,275 @@
                     </div>
                 </div>
                 <section class="side-content">
-                    <div class="stats-pane">
-                        <div class="sts">
-                            <div class="icon-sts"><i class="fas fa-user"></i></div>
-                            <div class="new-vline"></div>
-                            <div class="leveler">
-                                <h2 class="number">80</h2>
-                                <a class="label">Estudiantes</a>
+                    <div id="home-content" class="dis-none">
+                        <div class="stats-pane">
+                            <div class="sts">
+                                <div class="icon-sts"><i class="fas fa-user"></i></div>
+                                <div class="new-vline"></div>
+                                <div class="leveler">
+                                    <h2 class="number">80</h2>
+                                    <a class="label">Estudiantes</a>
+                                </div>
+                            </div>
+                            <div class="m30"></div>
+                            <div class="sts">
+                                <div class="icon-sts"><i class="fas fa-chalkboard-teacher"></i></div>
+                                <div class="new-vline"></div>
+                                <div class="leveler">
+                                    <h2 class="number">10</h2>
+                                    <a class="label">Maestros</a>
+                                </div>
+                            </div>
+                            <div class="m30"></div>
+                            <div class="sts">
+                                <div class="icon-sts"><i class="fas fa-plane"></i></div>
+                                <div class="new-vline"></div>
+                                <div class="leveler">
+                                    <h2 class="number">765</h2>
+                                    <a class="label">Horas de Vuelo</a>
+                                </div>
+                            </div>
+                            <div class="m30"></div>
+                            <div class="sts">
+                                <div class="icon-sts"><i class="fas fa-user-graduate"></i></div>
+                                <div class="new-vline"></div>
+                                <div class="leveler">
+                                    <h2 class="number">210</h2>
+                                    <a class="label">Graduados</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="m30"></div>
-                        <div class="sts">
-                            <div class="icon-sts"><i class="fas fa-chalkboard-teacher"></i></div>
-                            <div class="new-vline"></div>
-                            <div class="leveler">
-                                <h2 class="number">10</h2>
-                                <a class="label">Maestros</a>
+                        <div class="news-card">
+                            <div class="news-user">
+                                <div class="user-pic">
+                                    <div class="verified"></div>
+                                    <a href="#">ZA</a>
+                                </div>
+                                <div class="user-info">
+                                    <a href="#">Jose Zamora</a>
+                                    <a href="#">@zamora</a>
+                                </div>
+                            </div>
+                            <div class="hline"></div>
+                            <div class="news-img"></div>
+                            <div class="hline"></div>
+                            <div class="news-content">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                    quas
+                                    nihil
+                                    nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem
+                                    iusto
+                                    quam
+                                    repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum
+                                    similique
+                                    ex
+                                    doloribus voluptates libero hic quaerat sequi! Fuga veniam, similique quos
+                                    architecto
+                                    maxime
+                                    quibusdam debitis praesentium asperiores cupiditate fugiat autem eveniet atque
+                                    cumque.
+                                    Consequuntur error veritatis qui laboriosam excepturi obcaecati quaerat odio sequi,
+                                    perspiciatis illo beatae, aperiam in a quam eaque impedit totam voluptate repellat.
+                                    Deserunt
+                                    natus accusamus obcaecati, cupiditate commodi delectus iure repudiandae ab
+                                    exercitationem
+                                    autem, perspiciatis magnam, doloribus libero harum est. Modi id nisi exercitationem
+                                    nostrum
+                                    aliquid quam repellendus atque totam molestias eveniet facilis quibusdam
+                                    repudiandae,
+                                    sed
+                                    vitae
+                                    explicabo est maiores velit dolor! Repellendus nisi corporis mollitia obcaecati
+                                    doloremque
+                                    at,
+                                    quam quisquam veniam accusamus vitae similique animi nemo rem eaque illo aut
+                                    officiis,
+                                    cumque
+                                    porro error tenetur doloribus nostrum autem est eos? Eius odit consectetur fugiat
+                                    laborum
+                                    aut
+                                    quas illum distinctio iure debitis asperiores tenetur et reiciendis sapiente nihil
+                                    vero
+                                    tempore
+                                    ex quia modi magni eveniet quaerat, itaque voluptatum. Magni rem, ducimus vero
+                                    magnam
+                                    cupiditate dolore quasi doloribus repellat excepturi voluptates placeat explicabo
+                                    labore
+                                    neque
+                                    quibusdam aliquam distinctio autem non?</div>
                             </div>
                         </div>
-                        <div class="m30"></div>
-                        <div class="sts">
-                            <div class="icon-sts"><i class="fas fa-plane"></i></div>
-                            <div class="new-vline"></div>
-                            <div class="leveler">
-                                <h2 class="number">765</h2>
-                                <a class="label">Horas de Vuelo</a>
+                        <div class="news-card">
+                            <div class="news-user">
+                                <div class="user-pic">
+                                    <a href="#">SM</a>
+                                </div>
+                                <div class="user-info">
+                                    <a href="#">Susana Mata</a>
+                                    <a href="#">@matas</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="m30"></div>
-                        <div class="sts">
-                            <div class="icon-sts"><i class="fas fa-user-graduate"></i></div>
-                            <div class="new-vline"></div>
-                            <div class="leveler">
-                                <h2 class="number">210</h2>
-                                <a class="label">Graduados</a>
+                            <div class="hline"></div>
+                            <div class="news-img"></div>
+                            <div class="hline"></div>
+                            <div class="news-content">
+                                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                                <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                    quas
+                                    nihil
+                                    nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem
+                                    iusto
+                                    quam
+                                    repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum
+                                    similique
+                                    ex
+                                    doloribus voluptates libero hic quaerat sequi! Fuga veniam, similique quos
+                                    architecto
+                                    maxime
+                                    quibusdam debitis praesentium asperiores cupiditate fugiat autem eveniet atque
+                                    cumque.
+                                    Consequuntur error veritatis qui laboriosam excepturi obcaecati quaerat odio sequi,
+                                    perspiciatis illo beatae, aperiam in a quam eaque impedit totam voluptate repellat.
+                                    Deserunt
+                                    natus accusamus obcaecati, cupiditate commodi delectus iure repudiandae ab
+                                    exercitationem
+                                    autem, perspiciatis magnam, doloribus libero harum est. Modi id nisi exercitationem
+                                    nostrum
+                                    aliquid quam repellendus atque totam molestias eveniet facilis quibusdam
+                                    repudiandae,
+                                    sed
+                                    vitae
+                                    explicabo est maiores velit dolor! Repellendus nisi corporis mollitia obcaecati
+                                    doloremque
+                                    at,
+                                    quam quisquam veniam accusamus vitae similique animi nemo rem eaque illo aut
+                                    officiis,
+                                    cumque
+                                    porro error tenetur doloribus nostrum autem est eos? Eius odit consectetur fugiat
+                                    laborum
+                                    aut
+                                    quas illum distinctio iure debitis asperiores tenetur et reiciendis sapiente nihil
+                                    vero
+                                    tempore
+                                    ex quia modi magni eveniet quaerat, itaque voluptatum. Magni rem, ducimus vero
+                                    magnam
+                                    cupiditate dolore quasi doloribus repellat excepturi voluptates placeat explicabo
+                                    labore
+                                    neque
+                                    quibusdam aliquam distinctio autem non?</div>
                             </div>
                         </div>
                     </div>
-                    <div class="news-card">
-                        <div class="news-user">
-                            <div class="user-pic">
-                                <div class="verified"></div>
-                                <a href="#">ZA</a>
+                    <div id="group-content">
+                        <div class="group-stats-cont">
+                            <div class="group-circle">
+                                <h2>Al</h2>
+                                <p>Alpha</p>
                             </div>
-                            <div class="user-info">
-                                <a href="#">Jose Zamora</a>
-                                <a href="#">@zamora</a>
+                            <div class="group-average">
+                                <div class="group-stats">
+                                    <div class="grade">
+                                        <h2>7.2</h2>
+                                        <div class="icons">
+                                            <i class="fas fa-caret-up"></i>
+                                            <i class="fas fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                                    <label>Promedio General</label>
+                                </div>
+                                <div class="group-stats">
+                                    <div class="grade">
+                                        <h2>9.5</h2>
+                                        <div class="icons">
+                                            <i class="fas fa-caret-up"></i>
+                                            <i class="fas fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                                    <label>Maximo</label>
+                                </div>
+                                <div class="group-stats">
+                                    <div class="grade">
+                                        <h2>7.5</h2>
+                                        <div class="icons">
+                                            <i class="fas fa-caret-up"></i>
+                                            <i class="fas fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                                    <label>Minimo</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="hline"></div>
-                        <div class="news-img"></div>
-                        <div class="hline"></div>
-                        <div class="news-content">
-                            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                            <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas
-                                nihil
-                                nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem iusto
-                                quam
-                                repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum
-                                similique
-                                ex
-                                doloribus voluptates libero hic quaerat sequi! Fuga veniam, similique quos architecto
-                                maxime
-                                quibusdam debitis praesentium asperiores cupiditate fugiat autem eveniet atque cumque.
-                                Consequuntur error veritatis qui laboriosam excepturi obcaecati quaerat odio sequi,
-                                perspiciatis illo beatae, aperiam in a quam eaque impedit totam voluptate repellat.
-                                Deserunt
-                                natus accusamus obcaecati, cupiditate commodi delectus iure repudiandae ab
-                                exercitationem
-                                autem, perspiciatis magnam, doloribus libero harum est. Modi id nisi exercitationem
-                                nostrum
-                                aliquid quam repellendus atque totam molestias eveniet facilis quibusdam repudiandae,
-                                sed
-                                vitae
-                                explicabo est maiores velit dolor! Repellendus nisi corporis mollitia obcaecati
-                                doloremque
-                                at,
-                                quam quisquam veniam accusamus vitae similique animi nemo rem eaque illo aut officiis,
-                                cumque
-                                porro error tenetur doloribus nostrum autem est eos? Eius odit consectetur fugiat
-                                laborum
-                                aut
-                                quas illum distinctio iure debitis asperiores tenetur et reiciendis sapiente nihil vero
-                                tempore
-                                ex quia modi magni eveniet quaerat, itaque voluptatum. Magni rem, ducimus vero magnam
-                                cupiditate dolore quasi doloribus repellat excepturi voluptates placeat explicabo
-                                labore
-                                neque
-                                quibusdam aliquam distinctio autem non?</div>
+                        <div class="group-choices">
+                            <a id="choice-one">Tabla de grupos</a>
+                            <a id="choice-two">Crear un grupo</a>
+                            <a id="choice-three">Editar grupo</a>
+                            <a id="choice-four">Eliminar groupo</a>
+                        </div>
+                        <div class="group-choice-selected choice-pos1"></div>
+                        <div class="group-tabber">
+                            <div class="group-stack">
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="group-card">
+                                    <h2>Alfa</h2>
+                                    <div class="hline"></div>
+                                    <p>30</p>
+                                </div>
+                                <div class="empty-card"></div>
+                                <div class="empty-card"></div>
+                                <div class="empty-card"></div>
+                                <div class="empty-card"></div>
+                                <div class="empty-card"></div>
+                                <div class="empty-card"></div>
+                                <div class="empty-card"></div>
+                                <div class="empty-card"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="news-card">
-                        <div class="news-user">
-                            <div class="user-pic">
-                                <a href="#">SM</a>
-                            </div>
-                            <div class="user-info">
-                                <a href="#">Susana Mata</a>
-                                <a href="#">@matas</a>
-                            </div>
-                        </div>
-                        <div class="hline"></div>
-                        <div class="news-img"></div>
-                        <div class="hline"></div>
-                        <div class="news-content">
-                            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                            <div class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas
-                                nihil
-                                nobis eos, quam eum id ad expedita iure eveniet ipsum. Consectetur exercitationem iusto
-                                quam
-                                repudiandae, dolore unde nam sunt nulla quas quia autem accusantium harum nostrum
-                                similique
-                                ex
-                                doloribus voluptates libero hic quaerat sequi! Fuga veniam, similique quos architecto
-                                maxime
-                                quibusdam debitis praesentium asperiores cupiditate fugiat autem eveniet atque cumque.
-                                Consequuntur error veritatis qui laboriosam excepturi obcaecati quaerat odio sequi,
-                                perspiciatis illo beatae, aperiam in a quam eaque impedit totam voluptate repellat.
-                                Deserunt
-                                natus accusamus obcaecati, cupiditate commodi delectus iure repudiandae ab
-                                exercitationem
-                                autem, perspiciatis magnam, doloribus libero harum est. Modi id nisi exercitationem
-                                nostrum
-                                aliquid quam repellendus atque totam molestias eveniet facilis quibusdam repudiandae,
-                                sed
-                                vitae
-                                explicabo est maiores velit dolor! Repellendus nisi corporis mollitia obcaecati
-                                doloremque
-                                at,
-                                quam quisquam veniam accusamus vitae similique animi nemo rem eaque illo aut officiis,
-                                cumque
-                                porro error tenetur doloribus nostrum autem est eos? Eius odit consectetur fugiat
-                                laborum
-                                aut
-                                quas illum distinctio iure debitis asperiores tenetur et reiciendis sapiente nihil vero
-                                tempore
-                                ex quia modi magni eveniet quaerat, itaque voluptatum. Magni rem, ducimus vero magnam
-                                cupiditate dolore quasi doloribus repellat excepturi voluptates placeat explicabo
-                                labore
-                                neque
-                                quibusdam aliquam distinctio autem non?</div>
-                        </div>
                 </section>
             </section>
         </div>

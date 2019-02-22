@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 /* default override on lists and link underlines  */
 
@@ -66,10 +66,10 @@ nav * {
     /* all text aligned horizontally widthin element*/
     text-align: center;
 }
-
 /* nav > div controls container for navbar */
 
 nav div {
+    position: relative;
     /* nav bar bg color */
     background: #FFFFFF;
     /* aligning flex sb(1 000 1 000 1) -c- */
@@ -78,6 +78,8 @@ nav div {
     align-items: center;
     /*v sizing items will stay v centered*/
     height: 60px;
+
+    z-index: 2;
 }
 
 .logo-img {
@@ -114,12 +116,12 @@ nav input {
 }
 
 /* search bar icon search awesome font */
-div.input i {
+div.search i {
     /* search bar color */
     color: #ADB3BA;
     /* search bar position inside search bar */
     position: relative;
-    left: +9%;
+    left: -9%;
 }
 
 /* USER LINKS side right */

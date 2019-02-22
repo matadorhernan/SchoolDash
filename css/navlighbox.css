@@ -1,0 +1,116 @@
+
+
+.dis-none {
+    display: none;
+}
+
+.school-opts {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: #FFFFFF;
+    width: 300px;
+    z-index: 4;
+    border-radius: 10px;
+
+}
+
+.school-opts ul {
+    
+    padding:0;
+    margin: 0;
+}
+
+.school-opts ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-opts ul li div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px;
+}
+
+.school-opts::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 25px;
+    background: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    z-index: 3;
+    border-radius: 3px;
+    transform: rotate(45deg);
+
+}
+
+.school-opts .logo-opt {
+ 
+    background: url(/assets/logos/delta.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    left: 0;
+    top: 0;
+    position: relative;
+    margin-right: 10px;
+}
+
+.conf-opts {
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    width: 225px;
+
+    background: #ffffff;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 100px #0000003b;
+}
+
+.conf-opts ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.opt-conf {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.opt-conf a {
+    padding: 0 30px;
+    color: #464646;
+    font-weight: 100;
+}
+
+.opt-conf:hover i {
+    color: #2A2A2A;
+    transform: scale(1.3);
+}
+
+.opt-conf i {
+    transition: .3s;
+}
+
+.conf-opts::before {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    top: 0;
+    left: 105px;
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    z-index: -1;
+}
